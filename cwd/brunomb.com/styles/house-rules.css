@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'quasimodo'; 
+    src: url('../fonts/quasimodo.TTF');
+}
+
+body {
+	background-image: url("../images/climpek.png");
+	background-color: #ffe1bd;
+	font-family: "quasimodo", serif;
+}
+
+.centered-text {
+    text-align: center;
+    font-size: 30px;
+}
