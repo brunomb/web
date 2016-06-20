@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+	<!-- Adding onClick action -->
+	<button onClick="alert('Hi')">Acient Button! This is wrong</button>
+
+	<!-- Setting an ID -->
+	<p id="text">Some text</p>
+
+	<!-- Adding onClick action by ID using a external script -->
+	<button id="button1">You know you wnat to click me!</button>
+
+	<!-- Good practice its put the scripts here inside the HEADER or just before the /BODY tag -->
+    <script type="text/javascript">
+    
+		// Get the innter HTML for that element
+		alert(document.getElementById("text").innerHTML);
+
+		// You can change elements like this too
+		document.getElementById("text").innerHTML = "Some more text" ;
+		
+		// Just an alert
+		alert("Page loaded!, This alert its only a demonstration");
+
+		// Adding the onClick action
+		document.getElementById("button1").onclick=function() {
+			alert("Hi! I'm using a external script to do this! =D");
+		}
+	</script>
+</body>
+</html>
